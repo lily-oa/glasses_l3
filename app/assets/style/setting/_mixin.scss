@@ -1,0 +1,73 @@
+/* 工具箱 */ 
+//圖片取代文字(區塊元素)
+@mixin text-hide {
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+// 白色圖層的絕對定位(蓋在圖片上方)
+@mixin position-center{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+// 文字在圖片中央
+@mixin align-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// 首頁導覽列的hover效果(線條滑動)
+@mixin nav-hover{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: width 0.5s;
+}
+
+// 斷點
+//1024
+@mixin pc{
+  @media(max-width:1024px){
+    @content
+  }
+}
+//992
+@mixin pad{
+  @media(max-width:992px){
+    @content
+  }
+}
+//767
+@mixin mobile{
+  @media(max-width:767px){
+    @content
+  }
+}
+
+//576
+@mixin mobile-ms{
+  @media(max-width:576px){
+    @content
+  }
+}
+
+//403
+@mixin mobile-s{
+  @media(max-width:403px){
+    @content
+  }
+}
+
+//375
+@mixin mobile-ss{
+  @media(max-width:375px){
+    @content
+  }
+}

@@ -1,0 +1,149 @@
+// pagination  frame-opt
+.pagination {
+  padding-bottom: 160px;
+  a {
+    border: 1px solid $bordColor-frame-1;
+    padding: 10px 15px;
+    color: $bordColor-frame-1;
+    font-size: 19px;
+  }
+  .active {
+    background-color: $bordColor-frame-1;
+    color: #fff;
+  }
+  .next {
+    background-color: $bordColor-frame-2;
+  }
+}
+
+// pagination hover
+.pagination .pagination_hover:hover {
+  background: $bordColor-frame-1;
+  a:hover {
+    color: #fff;
+  }
+  .active:hover {
+    background: $secondary;
+    border: 1px solid $secondary;
+  }
+  .next:hover {
+    background: $bordColor-frame-1;
+    color: #fff;
+  }
+}
+
+@include pad{
+  .pagination{
+    margin-top: -7px;
+    padding-bottom: 96px;
+  }
+}
+
+@include mobile{
+  .pagination a {
+    font-size: $font-special-2;
+  }
+}
+
+// mobile-s(403)
+@include mobile-s{
+  .pagination{
+    .pre, .next{
+      font-size: $font-special-4;
+      padding-bottom: 11px;
+    }
+  }
+}
+
+// mobile-ss(375)
+@include mobile-ss{
+  .pagination{
+    .pre, .next{
+      font-size: $font-special-5;
+      padding-bottom: 13.5px;
+      padding-top: 13.5px;
+    }
+  }
+}
+
+/*---------------------------------------------------*/
+
+// pagination  frame-sun
+// pagination
+.paginationSun {
+  padding-bottom: 160px;
+  a {
+    border: 1px solid $bordColor-frame-1;
+    padding: 10px 15px;
+    color: $bordColor-frame-1;
+    font-size: 19px;
+  }
+  .active {
+    background-color: $bordColor-frame-1;
+    color: #fff;
+  }
+  .next {
+    background-color: $bordColor-frame-2;
+  }
+}
+
+// pagination hover
+.paginationSun .paginationSun_hover:hover {
+  background: $bordColor-frame-1;
+  a:hover {
+    color: #fff;
+  }
+  .active:hover {
+    background: $secondary;
+    border: 1px solid $secondary;
+  }
+  .next:hover {
+    background: $bordColor-frame-1;
+    color: #fff;
+  }
+}
+
+  .paginationSun {
+    display: none;
+}
+
+//pad
+@include pad {
+  .paginationSun {
+    display: none;
+  }
+}
+
+// mobile
+@include mobile {
+  .paginationSun{
+    display: block;
+    a {
+      font-size: $font-special-2;
+    }
+  }
+  .paginationSun{
+    margin-bottom: -104px;
+  }
+}
+
+// mobile-s(403)
+@include mobile-s{
+  .paginationSun{
+    .pre, .next{
+      font-size: $font-special-4;
+      padding-bottom: 11px;
+    }
+  }
+}
+
+// mobile-ss(375)
+@include mobile-ss{
+  .paginationSun{
+    .pre, .next{
+      font-size: $font-special-5;
+      padding-bottom: 13.5px;
+      padding-top: 13.5px;
+    }
+  }
+}

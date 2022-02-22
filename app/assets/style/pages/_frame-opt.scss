@@ -1,0 +1,135 @@
+// product
+
+.product {
+  padding: 80px 0 96px 0;
+  & .content_item {
+    width: calc(100% / 4 - 30px);
+    margin-bottom: 104px;
+  }
+  & .container .product_title {
+    font-size: $font-size-l;
+  }
+  & .container .product_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.product .item_price {
+  & .price_word {
+    display: flex;
+    justify-content: space-between;
+    & .word_style {
+      text-transform: uppercase;
+      font-size: $font-size-2;
+    }
+    & .style_red {
+      font-weight: 900;
+      color: $secondary;
+    }
+  }
+  & .price_cube {
+    display: flex;
+    justify-content: flex-start;
+    & .cube_coffee {
+      background-color: $cubeCoffee;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+    & .cube_brown {
+      background-color: $cubeBrown;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+  }
+}
+
+// pad
+@include pad {
+  .product {
+    padding: 56px 0 0 0;
+    .container {
+      max-width: 690px;
+      .h3-black {
+        font-size: $font-size-l;
+      }
+      .product_title {
+        font-size: $font-size-2;
+      }
+      & .content_item {
+        width: calc(100% / 2 - 30px);
+        margin-bottom: 72px;
+      }
+    }
+  }
+}
+
+// mobile
+@include mobile{
+  .product{
+    width: 100%;
+    padding: 32px 0 8px 0;
+    .container{
+      max-width: 100%;
+      .h3-black{
+        font-size: $font-size-m;
+      }
+      .product_title{
+        font-size: $font-size-1;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .product{
+    .product_content{
+      flex-direction: column;
+      .content_item{
+        width: 100%;
+        margin-bottom: 32px;
+      }
+      & img{
+        width: 100%;
+      }
+    }
+  }
+  .product .item_price .price_word .word_style{
+    font-size: $font-size-1;
+  }
+  .product .item_price .price_cube{
+    .cube_coffee, .cube_brown{
+      width: 15px;
+      height: 15px;
+      &:not(:last-child){
+        margin-right: 4px;
+      }
+    } 
+  }
+}
+
+//mobile-ms(576)
+@include mobile-ms{
+  
+  nav .nav_item a {
+    padding: 20px 20px;
+  }
+}
+
+//mobile-s(403)
+@include mobile-s{
+  
+  nav .nav_item a {
+    padding: 20px 20px;
+  }
+}
+
+//mobile-ss(375)
+@include mobile-ss{
+  
+  nav .nav_item a {
+    padding: 20px 15px;
+  }
+}

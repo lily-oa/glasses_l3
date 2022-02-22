@@ -1,0 +1,41 @@
+// 參考 Wendy03 所做網頁她所做的設定 https://github.com/Wendy03/glasses_gulp/blob/main/app/assets/style/helper/_spacing.scss
+
+$spacer: 16px;
+
+$spacers: (
+  '025': $spacer * 0.25,    //4
+  '05': $spacer * 0.5,    //8
+  '1': $spacer,           //16
+  '2': $spacer * 1.5,     //24 
+  '3': $spacer * 2,       //32
+  '4': $spacer * 2.5,     //40
+  '5': $spacer * 3,       //48
+  '6': $spacer * 3.75,    //60
+  '7': $spacer * 4,       //64
+  '8': $spacer * 5,       //80
+);
+
+@each $i, $val in $spacers {
+  .m {
+    &l-#{$i} {
+      margin-left: $val;
+    }
+    &r-#{$i} {
+      margin-right: $val;
+    }
+    &b-#{$i} {
+      margin-bottom: $val;
+    }
+    &t-#{$i} {
+      margin-top: $val;
+    }
+  }
+  .p {
+    &b-#{$i} {
+      padding-bottom: $val;
+    }
+    &t-#{$i} {
+      padding-top: $val;
+    }
+  }
+}

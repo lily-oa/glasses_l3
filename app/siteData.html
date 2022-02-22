@@ -1,0 +1,86 @@
+---
+title: 眼鏡電商 - 門市據點-地圖
+layout: ./app/layout.ejs
+engine: ejs
+current: siteData.html
+---
+
+<!-- siteBanner-->
+<div class="siteBanner">
+  <div class="container">
+    <ul class="siteBanner_content d-flex d-aic ">
+      <li class="siteBanner_item">
+        <h1 class="h2-black">門市據點</h1>
+      </li>
+      <li class="siteBanner_item">
+        <img class="siteBanner_pic"
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-location.svg"
+          alt="location icon">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--site-->
+<div class="site">
+  <div class="container">
+    <form class="locate_form d-flex d-aic">
+      <label for="selectStore" class="selectStore">
+        選擇分店
+      </label>
+      <select class="locate_form_select">
+        <option value="台北中山旗艦店">台北中山旗艦店</option>
+        <option value="台北信義旗艦店">台北信義旗艦店</option>
+        <option value="台北內湖特約店">台北內湖特約店</option>
+      </select>
+    </form>
+  </div>
+</div>
+
+<!--siteData-->
+<div class="container">
+  <div class="siteData d-flex d-jcsb">
+    <div class="siteData_content">
+      <div class="siteData_img"></div>
+      <div class="siteData_info">
+        <p class="siteData_info_name">台北中山旗艦店</p>
+        <ul class="siteData_info_list">
+          <li class="d-flex mb-1">
+            <img class="siteData_info_list_pic"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone-black.svg"
+              alt="phone icon">
+              電話：(02)000-1234
+          </li>
+          <li class="d-flex mb-1">
+            <img class="siteData_info_list_pic"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-clock-black.svg"
+              alt="clock icon">
+              營業時間：10:00-21:00
+          </li>
+          <li class="d-flex">
+            <img class="siteData_info_list_pic"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-map.svg"
+              alt="map icon">
+              地址：台北市中山區南京東路25巷2-1號
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="siteData_map">
+      <iframe
+        class="siteDataMap_pic"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.439336902062!2d121.51800776548095!3d25.053094283963475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a969512c9741%3A0x4adcb4498539709f!2sMooi%20hair%20salon%202%E9%A4%A8!5e0!3m2!1szh-TW!2stw!4v1627502040555!5m2!1szh-TW!2stw"
+          width="100%" 
+          height="100%"
+          frameborder="0"
+          style="border:0;"
+          aria-hidden="false"
+          allowfullscreen="" 
+          loading="lazy"
+          >
+        </iframe>
+    </div>
+  </div>
+</div>
+
+

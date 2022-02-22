@@ -1,0 +1,38 @@
+/* 通用單位 */ 
+// 顏色
+$primary: #650300;
+$secondary: #aa0601;
+$thirdColor: #AA06010D;
+$fourColor: #707070;
+$bordColor: #DEE2E6;
+$bordColor-2: #00000020;
+$bordColor-3: #CED4DA;
+$bordColor-4: #0A0A0A;
+$shodowColor: #00000029;
+$bordColor-frame-1:#555555;
+$bordColor-frame-2:#F2F2F2;
+$cubeCoffee: #5F3E2D;
+$cubeBrown: #B75929;
+$white: #ffffff;
+
+
+// 字型大小
+$font-size-1: 16px;  
+$font-size-s: $font-size-1*0.875;     //14
+$font-size-m: $font-size-1*1.25;      //20
+$font-size-l: $font-size-1*2;         //32
+$font-size-ml: $font-size-1*1.75;     //28 
+$font-size-ll: $font-size-1*2.625;    //42
+$font-size-2: $font-size-1*1.5;       //24
+$font-size-3: $font-size-1*2.25;      //36
+$font-size-4: $font-size-1*3;         //48
+$font-size-5: $font-size-1*4;         //64
+$font-size-6: $font-size-1*4.5;       //72
+//特殊字體大小
+$font-special-1: $font-size-1*1.1875; //19
+$font-special-2: $font-size-1*1.0625; //17
+$font-special-3: $font-size-1*1.125;  //18
+$font-special-4: $font-size-1*1.03125; //16.5
+$font-special-5: $font-size-1*0.75;    //
+$font-special-6: $font-size-1*0.625;   //10
+$font-special-7: $font-size-1*0.5;     //8

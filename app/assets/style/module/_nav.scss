@@ -1,0 +1,75 @@
+// nav  系列鏡框三個選項的元件的scss
+
+nav {
+    .nav_item {
+    width: 34%;
+    border-bottom: solid 8px transparent;
+    transition-duration: .3s;
+    &:hover {
+      border-bottom-color: $secondary;
+      transition-duration: .3s;
+    }
+    &_content {
+      font-size: 32px;
+      font-weight: bold;
+      color: black;
+      padding: 20px 0 13px;
+      border-left: solid 1px $bordColor;
+      border-right: solid 1px $bordColor;
+      @include breakpoint(pad992){
+        font-size: 22px;
+        padding-top: 14px;
+        padding-bottom: 6px;
+      }
+      @include breakpoint(phone767){
+        font-size: 14px;
+        padding-top: 8px;
+        padding-bottom: 1px;
+      }
+    }
+    & .nav_pic {
+      width: 44px;
+      height: 44px;
+      @include breakpoint(pad992){
+        width: 32px;
+        height: 32px;
+      }
+      @include breakpoint(phone767){
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+// banner 圖片能自適應最主要的設定
+// .nav_banner .nav_banner_item{
+//   width: calc(100% / 2 );
+//   .nav_banner_pic {
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
+
+// 另一種做法但沒有比但 Tori 可以做到我不行
+.nav_banner .nav_banner_item{
+  width: 50%;
+  height: 304px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  @include breakpoint(phone767){
+    height: 184px;
+  }
+  .nav_banner_pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include breakpoint(pad992){
+      width: 150%;
+    }
+    @include breakpoint(phone767){
+      width: 150%;
+    }
+  }
+}

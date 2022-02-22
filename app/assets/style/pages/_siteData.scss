@@ -1,0 +1,179 @@
+// site
+.site {
+  padding: 50px 0 13px 0;
+
+  @include pad {
+    padding: 40px 0 16px 0;
+  }
+
+  @include mobile {
+    padding: 24px 0 0 0;
+  }
+}
+
+.locate_form {
+  .selectStore {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-right: 24px;
+  }
+
+  &_select {
+    font-size: 18px;
+    line-height: 1.45;
+    width: 324px;
+    padding: 8px 19px 11px;
+    border-color: $bordColor-3;
+  }
+}
+
+// pad
+@include pad {
+  .container {
+    max-width: 690px;
+  }
+
+  .locate_form {
+    .selectStore {
+      font-size: 16px;
+      line-height: 1.875;
+      margin-right: 15px;
+    }
+
+    &_select {
+      font-size: 16px;
+      line-height: 1.5;
+      width: 237px;
+      padding: 10px 16px 12px;
+    }
+  }
+}
+
+//mobile
+@include mobile {
+  .container {
+    max-width: 100%;
+  }
+
+  .locate_form {
+    .selectStore {
+      font-size: $font-size-s;
+      line-height: 2.14;
+      margin-right: 12px;
+    }
+
+    &_select {
+      font-size: $font-size-s;
+      line-height: 1.72;
+      width: 80%;
+    }
+  }
+}
+
+/*---------------------作業修正結束-*/
+
+
+/*--------------------------------------------*/
+// siteData
+.siteData {
+  padding-top: 32px;
+  padding-bottom: 160px;
+
+  .siteData_content {
+    width: 40%;
+  }
+
+  &_img {
+    height: 224px;
+    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true"') center center no-repeat;
+    background-size: cover;
+  }
+
+  &_info {
+    border: 1px solid $bordColor-2;
+
+    &_name {
+      padding: 24px 12px;
+      font-size: $font-size-2;
+    }
+
+    &_list {
+      border-top: 1px solid $bordColor-2;
+      padding: 24px 16px;
+
+      &_pic {
+        margin-right: 12px;
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+
+  &_map {
+    width: 57.2%;
+  }
+}
+
+// pad  
+@include pad {
+  .container{
+    max-width: 690px;
+  }
+  .siteData {
+    padding-top: 24px;
+    padding-bottom: 96px;
+    flex-direction: column;
+  }
+  .siteData .siteData_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+    font-size: $font-size-s;
+  }
+  .siteData_img {
+    width: 50%;
+    margin-right: 30px;
+  }
+  .siteData_info {
+    width: 50%;
+    &_name {
+      font-size: $font-size-1;
+    }
+    &_list {
+      &_pic {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .siteData_map{
+    width: 100%;
+    height: 465px;
+    margin-left: 0;
+  }
+}
+
+// mobile
+@include mobile {
+  .container{
+    max-width: 100%;
+    .siteData{
+      padding-top: 20px;
+      padding-bottom: 56px;
+      &_content {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+    }
+    .siteData{
+      &_img{
+        width: 100%;
+      }
+      &_info{
+        width: 100%;
+      }
+    }
+  }
+}

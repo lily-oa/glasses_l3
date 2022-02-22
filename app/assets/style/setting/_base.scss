@@ -1,0 +1,172 @@
+/* 全域設定 */
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: $font-size-1;
+}
+
+/* rwd img css，可當作是 CSS Reset 其中一個 防止破版
+		vertical-align: middle; 防止多餘的 3px
+		圖片需要並排時用它比較合適
+*/
+img {
+  width: 100%;
+	vertical-align: middle;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 1.5;
+}
+
+h1,
+.h1-another {
+  font-size: 4rem; //64px
+  font-weight: bold;
+  @include breakpoint(pad992){
+    font-size: 3rem; //48px
+  }
+  @include breakpoint(phone767){
+    font-size: 1.5rem; //24px
+  }
+}
+
+h2,
+.h2-another {
+  font-size: 3rem; //48px
+  @include breakpoint(pad992){
+    font-size: 2rem; //32px
+  }
+  @include breakpoint(phone767){
+    font-size: 1.5rem; //24px
+  }
+}
+
+h3,
+.h3-another {
+  font-size: 2.25rem; //36px
+  @include breakpoint(pad992){
+    font-size: 1.25rem; //20px
+  }
+  @include breakpoint(phone767){
+    font-size: 1rem; //16px
+  }
+}
+
+h4,
+.h4-another {
+  font-size: 2rem; //32px
+  @include breakpoint(pad992){
+    font-size: 1.5rem; //24px
+  }
+  @include breakpoint(phone767){
+    font-size: 1rem; //16px
+  }
+}
+
+h5,
+.h5-another {
+  font-size: 1.5rem; //24px
+  @include breakpoint(pad992){
+    font-size: 1.25rem; //20px
+  }
+}
+
+.font-another{
+  &-xs{
+    font-size: 14px;
+  }
+  &-sm{
+    font-size: 20px;
+    @include breakpoint(pad992){
+      font-size: 16px;
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.select-another {
+  height: 46px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #495057;
+  padding: 10px 0px 10px 19px;
+  display: block;
+  min-height: 1.2rem;  //19.2px
+  @include breakpoint(pad992){
+    font-size: 16px;
+    padding: 12px 0px 12px 16px;
+  }
+  @include breakpoint(phone767){
+    font-size: 14px;
+    padding: 8px 0px 8px 16px;
+  }
+}
+
+.text-another {
+  &-center{
+    text-align: center;
+  }
+  &-bold{
+    font-weight: 900;
+  }
+  &-danger{
+    color: $primary;
+  }
+  &-white{
+    color: $white;
+  }
+  &-primary{
+    color: $secondary;
+  }
+}
+
+.bg-another{
+  &-primary{
+    background-color: $secondary;
+  }
+  &-pink{
+    background-color: $thirdColor;
+  }
+  &-danger{
+    background-color: $primary;
+  }
+}
+// 三種版型的大小及內距
+.container-another {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 64px 10px 80px;
+  @include breakpoint(pad992){
+    max-width: 690px;
+    padding: 40px 0;
+  }
+  @include breakpoint(phone767){
+    width: 100%;
+    padding: 32px 5px;
+  }
+}
+
+.title-another {
+  font-weight: bold;
+  @include breakpoint(pad992){
+    margin-bottom: 32px;
+  }
+  @include breakpoint(phone767){
+    margin-bottom: 20px;
+  }
+}

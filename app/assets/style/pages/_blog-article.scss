@@ -1,0 +1,281 @@
+nav .breadcrumb_list{
+  margin: 8px 0;
+  .breadcrumb-item{
+  a {
+    color: #000000;
+    &:hover {
+        color: $secondary;
+      }
+    }  
+  }
+  .active a{
+    color: $secondary;
+    &:hover {
+      color: $primary;
+    }
+  }
+} 
+
+.article_page_content .article_tags a{
+  color: $secondary;
+  font-weight: bold;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.article_tags_767Color{
+  @include breakpoint(phone767){
+    color: $primary;
+  }
+}
+.article_subtitle{
+  margin-bottom: 24px;
+  @include breakpoint(phone767){
+    margin-bottom: 20px;
+  }
+}
+// 分隔點
+section .article_separate{
+  display: flex;
+  justify-content: space-between;
+  @include breakpoint(phone767){
+    flex-direction: column;
+  }
+}
+
+.article_contentLeft{
+  width: 70%;
+  img{
+    width: 100%;
+  }
+  @include breakpoint(phone767){
+    width: 100%;
+  }
+}
+
+.article_lists{
+  margin: 24px 0 6px 0px;
+  @include breakpoint(phone767){
+    margin: 20px 0 -4px 0px;
+  }
+}
+.article_text{
+  color: $bordColor-frame-1;
+  padding: 16px 0 24px 0;
+  font-size: 20px;
+  @include breakpoint(phone767){
+    font-size: 16px;
+  }
+  &_item {
+    margin-bottom: 30px;
+  }
+}
+
+.blog_tags_title{
+  font-size: 28px;
+  margin-bottom: 8px;
+  @include breakpoint(phone767){
+    font-size: 24px;
+  }
+}
+
+// 右半部 設定
+.article_contentRight {
+  width: 30%;
+  color: $secondary;
+  margin-left: 40px;
+  @include breakpoint(pad992){
+    margin-left: 30px;
+  }
+  @include breakpoint(phone767){
+    margin-left: 0;
+    display: none;
+  }
+  ul a {
+    color: $secondary;
+    font-weight: bold;
+    font-size: 20px;
+  &:hover { 
+      color: $primary;
+    }
+  }
+}
+//下方資訊
+.other_msg {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px $fourColor;
+  @include breakpoint(phone767){
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+// 分享 icon hover時變成原本的1.2倍大
+.share_icon {
+  display: block;
+  width: 20px;
+  transition-duration: .25s;
+
+  &:hover {
+    transform: scale(1.2);
+    transition-duration: .25s;
+  }
+}
+
+// 上下頁切換
+.blog_page_switch {
+  p:nth-child(2){
+    display: none;
+    @include breakpoint(phone767){
+      display: block;
+    }
+  }
+  @include breakpoint(phone767){
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.blog_page_switch_start, .blog_page_switch_end {
+  font-size: 19px;
+  line-height: 1.579;
+  position: relative;
+  display: block;
+  color: #000;
+  transition-duration: .2s;
+
+  &:hover {
+    color: $secondary;
+    transition-duration: .2s;
+  }
+  @include breakpoint(phone767){
+    font-size: 14px;
+    line-height: 2.143;
+  }
+}
+
+//左邊箭頭 定位位置及 hover 動畫設定
+.blog_page_switch_start {
+  &::before{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    bottom: -5px;
+    margin-right: 8px;
+    background-image: url('../images/arrow/icon-arrow-left.svg');
+    transition-duration: .2s;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    border: solid 1px transparent;
+    transition-duration: .2s;
+  }
+
+  &:hover{
+    &::before{
+      background-image: url('../images/arrow/icon-arrow-left-red.svg');
+      transform: translateX(-3px);
+      transition-duration: .2s;
+    }
+    &::after{
+      left: 0;
+      width: 100%;
+      border-color: $secondary;
+      transition-duration: .2s;
+    }
+  }
+  @include breakpoint(phone767){
+    margin-bottom: 8px;
+    &::before{
+      margin-right: 0;
+    }
+  }
+}
+
+//右邊箭頭 定位位置及 hover 動畫設定
+.blog_page_switch_end {
+  &::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    border: solid 1px transparent;
+    transition-duration: .2s;
+  }
+  &::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    bottom: -5px;
+    margin-left: 8px;
+    background-image: url('../images/arrow/icon-arrow.svg');
+    transition-duration: .2s;
+  }
+
+  &:hover{
+    &::before{
+      left: 0;
+      width: 100%;
+      border-color: $secondary;
+      transition-duration: .2s;
+    }
+    &::after{
+      background-image: url('../images/arrow/icon-arrow-right-red.svg');
+      transform: translateX(3px);
+      transition-duration: .2s;
+    }
+  }
+  @include breakpoint(phone767){
+    display: none;
+  }
+}
+
+.blog_page{
+  margin-bottom: 96px;
+  @include breakpoint(phone767){
+    margin-bottom: 30px;
+  }
+}
+
+.blog_tags_below{
+  display: none;
+  @include breakpoint(phone767){
+    display: block;
+    padding-bottom: 26px;
+    &_title{
+      font-size: 20px;
+      margin-bottom: 8px;
+      &::before{
+        content: '';
+        position: relative;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        bottom: -10px;
+        background-image: url(../images/icon-tag.svg);
+        background-size: cover;
+      }
+    }
+  }
+}
+.blog_tags_below_content li a {
+  margin-right: 8px;
+  color: $secondary;
+  &:hover{
+    color: $primary;
+  }
+}

@@ -1,0 +1,235 @@
+// site
+.siteStoreBody {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, 100px);
+  margin-bottom: 272px;
+}
+
+.siteCard {
+  width: 30%;
+  margin-bottom: 32px;
+  img{
+    width: 100%;
+  }
+}
+
+.siteCard:last-child:nth-child(3n-1){
+  margin-right: calc(30% + 10% / 2);
+}
+
+
+.site {
+  padding-top: 64px;
+  .siteSelect {
+    width: 39.63%;
+    margin-bottom: 32px;
+    .siteTitle {
+      font-size: $font-size-2;
+      width: 26.36%;
+    }
+    .dropDown {
+      width: 60.37%;
+      padding: 10px;
+
+      .dropDown_item {
+        font-size: $font-special-3;
+      }
+    }
+  }
+}
+
+// siteStore
+.site .siteCard {
+  margin-bottom: 32px;
+  border: 1px solid $bordColor-2;
+  .siteCard_title {
+    font-size: $font-size-2;
+    padding: 12px 0 12px 24px;
+    border-bottom: 1px solid #00000020;
+  }
+  .siteCard_body {
+    padding: 12px 0 16px 27px;
+
+    .siteCard_Item {
+      margin-bottom: 8px;
+
+      &_pic {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+
+      &_word {
+        font-size: $font-size-m;
+      }
+    }
+  }
+  .siteCard_footer {
+    padding: 20px 0;
+    background: #000;
+    text-align: center;
+    &:hover{
+      background: $bordColor-frame-1;
+    }
+    a {
+      color: #fff;
+      font-size: $font-special-1;
+    }
+  }
+}
+
+//pc (1024)
+@include pc{
+  .site .siteStore .siteStoreBody .siteCard {
+    width: 48%;
+    &:last-child:nth-child(3n-1){
+      margin-right: 0;
+    }
+  }
+
+}
+
+// pad (992)
+@include pad {
+  .site {
+    padding-top: 40px;
+    .container {
+      max-width: 690px;
+    }
+    .siteSelect {
+      width: 46.52%;
+      margin-bottom: 24px;
+      .siteTitle {
+        font-size: $font-size-1;
+        width: 26.25%;
+      }
+      .dropDown {
+        width: 73.75%;
+        padding: 8px;
+        .dropDown_item {
+          font-size: $font-size-1;
+        }
+      }
+    }
+  }
+  //sitStore
+  .site .siteCard {
+    width: 47.82%;
+    margin-bottom: 20px;
+    border: 1px solid $bordColor-2;
+    
+    .siteCard_title {
+      font-size: $font-size-1;
+      padding: 8px 0 8px 24px;
+      border-bottom: 1px solid #00000020;
+    }
+    .siteCard_body {
+      padding: 16px 0 16px 26px;
+      .siteCard_Item {
+        margin-bottom: 8px;
+        &_pic {
+          width: 15px;
+          height: 15px;
+          margin-right: 5px;
+        }
+        &_word {
+          font-size: $font-size-s;
+        }
+      }
+    }
+    .siteCard_footer {
+      padding: 16px 0;
+      background: #000;
+      text-align: center;
+      a {
+        color: #fff;
+        font-size: $font-size-s;
+      }
+    }
+  }
+}
+
+// mobile (767)
+@include mobile {
+  .site {
+    padding-top: 24px;
+    width: 100%;
+    .container {
+      max-width: 100%;
+    }
+    & .siteSelect {
+      width: 100%;
+      margin-bottom: 20px;
+      .siteTitle {
+        font-size: $font-size-s;
+        width: 20%;
+      }
+      .dropDown {
+        width: 80%;
+        padding: 8px 0 8px 16px;
+        .dropDown_item {
+          font-size: $font-size-s;
+        }
+      }
+    }
+  }
+  
+.site .siteCard_2 {
+    width: 47.82%;
+    margin: 0;
+    margin-bottom: 16px;
+    border: 1px solid $bordColor-2;
+    .img {
+      width: 50%;
+      margin-right: 30px;
+      .siteCard__content {
+        width: 50%;
+      }
+    }
+    .pic_size {
+      width: 100%!important;
+      height: 100%;
+    }
+    .siteCard_title {
+      font-size: $font-size-1;
+      padding: 8px 0 8px 24px;
+      border-bottom: 1px solid #00000020;
+    }
+    .siteCard_body {
+      padding: 16px 0 16px 26px;
+      .siteCard_Item {
+        margin-bottom: 8px;
+        &_pic {
+          width: 15px;
+          height: 15px;
+          margin-right: 5px;
+        }
+        &_word {
+          font-size: $font-size-s;
+        }
+      }
+    }
+    .siteCard_footer {
+      padding: 16px 0;
+      background: #000;
+      text-align: center;
+      a {
+        color: #fff;
+        font-size: $font-size-s;
+      }
+    }
+  }
+}
+
+// mobile-ms (576)
+@include mobile-ms{
+  .site .siteStore .siteStoreBody{
+    margin-bottom: 40px;
+      .siteCard{
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  } 
+}

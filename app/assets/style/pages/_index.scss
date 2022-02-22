@@ -1,0 +1,506 @@
+// banner
+.banner {
+  background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true') no-repeat center center;
+  background-size: cover;
+  height: 840px;
+  .container {
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    .banner_item {
+      font-size: $font-size-3;
+      color: $primary;
+    }
+  }
+}
+
+// pad
+@include pad {
+  .banner {
+    .container {
+      max-width: 768px;
+      .banner_item {
+        font-size: $font-size-m;
+      }
+      h1 {
+        font-size: $font-size-4;
+      }
+    }
+  }
+}
+
+// mobile
+@include mobile {
+  .banner {
+    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true') no-repeat center center;
+    background-size: cover;
+    max-height: 394px;
+    .container {
+      max-height: 394px;
+      max-width: 569px;
+      .banner_item {
+        font-size: $font-size-1;
+      }
+      h1 {
+        font-size: $font-size-l;
+        text-align: right;
+      }
+    }
+  }
+}
+
+//profession
+.profession {
+  padding: 30px 0 80px 0;
+  background: $thirdColor;
+  .profession_card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.profession_cardBody {
+  width: 21%;
+  img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 24px;
+    margin: 0 auto;
+  }
+}
+
+// pad
+@include pad {
+  .profession {
+    width: 100%;
+    padding: 40px 0 56px 0;
+    .container {
+      max-width: 690px;
+      padding: 0 40px;
+      & h2 {
+        font-size: $font-size-4;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .profession .profession_card {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .profession_cardBody {
+      align-items: center;
+      width: calc(100% / 2 - 30px);
+      & p {
+        width: 255px;
+      }
+    }
+  }
+  .profession img {
+    width: 83.83px;
+    height: 83.83px;
+  }
+  .mb_A {
+    margin-bottom: 68.5px;
+  }
+}
+
+// mobile
+@include mobile {
+  .profession {
+    padding: 32px 0 0 0;
+    .container {
+      max-width: 100%;
+      .h2 {
+        font-size: $font-size-2;
+        margin-bottom: 28.08px;
+      }
+      .profession_card {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .mb_A {
+          margin-bottom: 40px;
+        }
+        .profession_cardBody{
+          width: 255px;
+        }
+      }
+    }
+  }
+  .profession_card .profession_cardBody {
+    margin-bottom: 40px;
+  }
+}
+
+//classic
+.classic_card {
+  display: flex;
+  .pic {
+    width: 60%;
+  }
+  .classic_title {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    p {
+      font-size: $font-size-4;
+      color: $secondary;
+      margin-left: 10px;
+    }
+  }
+}
+.classic_card_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  .pic {
+    width: 60%;
+  }
+  .classic_title_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 24px;
+    p {
+      font-size: $font-size-4;
+      color: $secondary;
+      margin-right: 10px;
+    }
+  }
+}
+
+// pad
+@include pad {
+  .classic {
+    padding: 40px 0 56px 0;
+    .container {
+      max-width: 690px;
+      padding: 0;
+      .h2 {
+        font-size: $font-size-l;
+      }
+    }
+  }
+  .classic .classic_card {
+    .pic {
+      width: 50%;
+      margin-bottom: 8px;
+    }
+    .classic_title img {
+      width: 26.67px;
+    }
+    .classic_title p {
+      font-size: $font-size-ml;
+    }
+  }
+  .classic .classic_card_reverse {
+    flex-direction: row;
+    img {
+      width: 50%;
+      margin-bottom: 8px;
+    }
+    .classic_title_reverse {
+      flex-direction: row;
+      img {
+        width: 26.67px;
+        margin-left: 31.67px;
+      }
+      p {
+        font-size: $font-size-ml;
+        margin-left: 10px;
+      }
+    }
+  }
+  .classic .classic_card_reverse .classic_title_reverse img {
+    margin-left: 31.67px;
+  }
+  .classic_card .classic_title {
+    margin-left: 31.67px;
+  }
+}
+
+// mobile
+@include mobile {
+  .classic {
+    max-width: 100%;
+    padding: 32px 0 40px 0;
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+      .h2 {
+        font-size: $font-size-m;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .classic .container .classic_card {
+    position: relative;
+    width: 100%;
+    .pic {
+      width: 100%;
+    }
+    .classic_title {
+      margin-left: 0;
+      @include align-center;
+    }
+  }
+  .classic .classic_card_reverse {
+    position: relative;
+    max-width: 100%;
+    margin-right: 0;
+    img {
+      width: 100%;
+    }
+    .classic_title_reverse {
+      @include align-center;
+      img {
+        margin-left: 0;
+      }
+      p {
+        font-size: $font-size-ml;
+      }
+    }
+  }
+}
+
+// design
+.design {
+  background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true') no-repeat center center;
+  height: auto;
+  background-size: cover;
+  .design_content {
+    display: flex;
+    justify-content: space-between;
+    .design_item {
+      position: relative;
+      width: 49%;
+      &::before {
+        content: '';
+        @include position-center;
+        background-color: rgba(#fff, 0.5);
+      }
+      p {
+        min-width: 100%;
+        @include align-center;
+        font-size: $font-size-6;
+        color: $secondary;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// pad
+@include pad {
+  .design {
+    padding: 40px 0 56px 0;
+    .container {
+      max-width: 690px;
+      .h2-white {
+        font-size: $font-size-l;
+        margin-bottom: 32px;
+      }
+    }
+  }
+  .design .design_content .design_item p {
+    font-size: $font-size-l;
+  }
+}
+
+// mobile
+@include mobile {
+  .design {
+    padding: 32px 0 24px 0;
+    max-width: 100%;
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+      .h2-white {
+        font-size: $font-size-m;
+      }
+    }
+  }
+  .design .design_content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    .design_item {
+      width: 100%;
+      margin-bottom: 16px;
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: $font-size-l;
+      }
+    }
+  }
+}
+
+// recommend
+.recommend_card {
+  display: flex;
+  justify-content: space-between;
+  .recommend_card_list {
+    width: 23.026%;
+  }
+}
+.recommend_card_content {
+  padding: 16px;
+  border: 1px solid $bordColor;
+  box-shadow: 0px 2px 6px $shodowColor;
+  .recommend_card_title {
+    font-size: $font-size-s;
+    margin-bottom: 8px;
+  }
+  .body_bottom_76 {
+    margin-bottom: 76px;
+  }
+  .body_bottom_52 {
+    margin-bottom: 52px;
+  }
+  .recommend_card_date {
+    font-size: $font-size-s;
+    color: $fourColor;
+  }
+}
+
+// pad
+@include pad {
+  .recommend {
+    padding: 40px 0 24px 0;
+    .container {
+      max-width: 690px;
+      .h2 {
+        font-size: $font-size-l;
+        margin-bottom: 32px;
+      }
+    }
+  }
+  .recommend_card {
+    flex-wrap: wrap;
+    .recommend_card_list {
+      width: 48%;
+      
+    }
+  }
+  .recommend_card_content {
+    margin-bottom: 32px;
+    .body_bottom_76{
+      margin-bottom: 52px;
+    }
+  }
+}
+
+// mobile
+@include mobile {
+  .recommend{
+    padding: 32px 0 24px 0;
+    .container{
+      max-width: 100%;
+      .recommend_card{
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .recommend_card .recommend_card_list{
+    margin: 0 auto;
+      width: 100%;
+      margin-bottom: 16px;
+    img{
+      width: 100%;
+    }
+    .recommend_card_content{
+      margin-bottom: 0;
+    }
+  }
+}
+
+// contact
+.contact {
+  background: $thirdColor;
+  .contact_content {
+    width: 80%;
+    margin: 0 auto;
+    p {
+      font-size: $font-size-m;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+}
+.contact_form input[type="text"],
+.contact_form input[type="tel"],
+.contact_form input[type="email"] {
+  margin-bottom: 16px;
+  min-width: 100%;
+  padding: 14px;
+}
+.contact_form textarea {
+  height: 136px;
+  padding: 14px;
+  min-width: 100%;
+}
+input[type="checkbox"] {
+  width: 3%;
+}
+.contact_checkbox {
+  margin-top: 16px;
+}
+.contact_btn_box {
+  display: flex;
+  justify-content: center;
+  .contact_btn {
+    background: $secondary;
+    height: 54px;
+    width: 50%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+// contact_btn hover
+.contact .contact_btn:hover {
+  background: $primary;
+  color: #fff;
+}
+
+// pad
+@include pad{
+  .contact{
+    padding: 40px 0 56px 0;
+    .container{
+      max-width: 690px;
+      .contact_content .h2-black{
+        font-size: $font-size-l;
+      }
+      p{
+        font-size: $font-size-1;
+      }
+    }
+  }
+  .contact .f_size{
+    font-size: $font-size-s;
+  }
+.contact_form .contact_checkbox{
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+}
+
+// mobile
+@include mobile{
+  .contact{
+    padding: 30px 0 48px 0;
+    .container{
+      max-width: 100%;
+    }
+    & .contact_content{
+    width: 100%;
+    }
+  }
+}

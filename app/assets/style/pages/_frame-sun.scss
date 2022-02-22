@@ -1,0 +1,119 @@
+//productSun
+
+.productSun {
+  padding: 80px 0 56px 0;
+  & .productSun_content_item {
+    width: calc(100% / 3 - 30px);
+    margin-bottom: 104px;
+    .productSun_pic{
+      height: 224px;
+    }
+  }
+  & .container .productSun_title {
+    font-size: $font-size-l;
+  }
+  & .container .productSun_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+//避免圖片變形
+.productSun .productSun_pic{
+  object-fit: cover;
+}
+.productSun .productSun_item_price {
+  & .productSun_price_word {
+    display: flex;
+    justify-content: space-between;
+    & .productSun_word_style {
+      text-transform: uppercase;
+      font-size: $font-size-2;
+    }
+    & .style_red {
+      font-weight: 900;
+      color: $secondary;
+    }
+  }
+  & .price_cube {
+    display: flex;
+    justify-content: flex-start;
+    & .cube_coffee {
+      background-color: $cubeCoffee;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+    & .cube_brown {
+      background-color: $cubeBrown;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+  }
+}
+
+// pad
+@include pad {
+  .productSun {
+    padding: 56px 0 24px 0;
+    .container {
+      max-width: 690px;
+      .h3-black {
+        font-size: $font-size-l;
+      }
+      .productSun_title {
+        font-size: $font-size-2;
+        margin-bottom: 32px;
+      }
+      & .productSun_content_item {
+        width: calc(100% / 2 - 30px);
+        margin-bottom: 72px;
+      }
+    }
+  }
+} 
+
+// mobile
+@include mobile{
+  .productSun{
+    width: 100%;
+    padding: 32px 0 8px 0;
+    .container{
+      max-width: 100%;
+      .h3-black{
+        font-size: $font-size-m;
+      }
+      .productSun_title{
+        font-size: $font-size-1;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .productSun{
+    .productSun_content{
+      flex-direction: column;
+      .productSun_content_item{
+        width: 100%;
+        margin-bottom: 32px;
+      }
+      & .productSun_pic{
+        width: 100%;
+        height: 380px;
+      }
+    }
+  }
+  .productSun .productSun_item_price .productSun_price_word .productSun_word_style{
+    font-size: $font-size-1;
+  }
+  .productSun .productSun_item_price .price_cube{
+    .cube_coffee, .cube_brown{
+      width: 15px;
+      height: 15px;
+      &:not(:last-child){
+        margin-right: 4px;
+      }
+    } 
+  }
+}  

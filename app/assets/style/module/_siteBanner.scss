@@ -1,0 +1,31 @@
+.siteBanner{
+  background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true') no-repeat center center;
+  height: 304px;
+  position: relative;
+  .container .siteBanner_content {
+    position: absolute;
+    bottom: 0;
+    h2{
+      margin-right: 5px;
+    }
+  }
+}
+
+// pad
+@include pad{
+  .siteBanner .siteBanner_pic{
+    width: 30px;
+    height: 45px;
+  }
+}
+
+// mobile
+@include mobile{
+  .siteBanner .container .siteBanner_content h2{
+    font-size: $font-size-ml;
+  }
+  .siteBanner .siteBanner_pic{
+    width: 20px;
+    height: 35px;
+  }
+}
