@@ -1,6 +1,7 @@
 const prodocutsTitle = document.querySelector('.js_prodocuts_title'); // 商品標題
 const productNavbarItems = document.querySelectorAll('.js_product_navbar_item'); // 商品分類表
 
+
 // 頁面資料
 const productDatas = {
   optical: {
@@ -219,6 +220,14 @@ const productDatas = {
 };
 
 
+// 商品渲染 Fn
+function renderProductData(data, fn){ // 產品資料渲染
+  let str = '';
+  data.forEach((item) => {
+    str += fn(item);
+  });
+}
+
 // 商品渲染事件
 function clickProductRenderEvent() {
   let productCategory, renderStr;
@@ -232,7 +241,7 @@ function clickProductRenderEvent() {
       if (e.target.innerText === 'OPTICAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.optical;
-        renderStr = productOpticalsStr;
+        
         prodocutsTitle.textContent = productCategory.title;
         
         
@@ -241,13 +250,13 @@ function clickProductRenderEvent() {
       } else if (e.target.innerText === 'SUNGLASSES') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.sunglasses;
-        renderStr = productSunglassesStr;
+        
         prodocutsTitle.textContent = productCategory.title;
         
       } else if (e.target.innerText === 'FUNCTIONAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.functional;
-        renderStr = productFunctionalStr;
+        
         prodocutsTitle.textContent = productCategory.title;
         
       }
