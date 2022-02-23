@@ -205,14 +205,17 @@ function clickProductRenderEvent() {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.optical;
         prodocutsTitle.textContent = productCategory.title;
+        window.location.href = "./frame-opt.html";
       } else if (e.target.innerText === 'SUNGLASSES') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.sunglasses;
         prodocutsTitle.textContent = productCategory.title;
+        window.location.href = "./frame-sun.html";
       } else if (e.target.innerText === 'FUNCTIONAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.functional;
         prodocutsTitle.textContent = productCategory.title;
+        window.location.href = "./frame-fun.html";
       }
     });
   });
