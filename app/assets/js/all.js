@@ -9,94 +9,94 @@ const productDatas = {
     banners: [
       {
         id: 1,
-        imgUrl: './assets/images/banners/banner-1.png',
+        imgUrl: './assets/images/banner-1.png',
       },
       {
         id: 2,
-        imgUrl: './assets/images/banners/banner-2.png',
+        imgUrl: './assets/images/banner-2.png',
       },
     ],
     products: [
       {
         id: 1,
-        imgUrl: './assets/images/product_Imgs/product-optical-1.jpg',
+        imgUrl: './assets/images/product-optical-1.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 2,
-        imgUrl: './assets/images/product_Imgs/product-optical-2.jpg',
+        imgUrl: './assets/images/product-optical-2.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 3,
-        imgUrl: './assets/images/product_Imgs/product-optical-3.jpg',
+        imgUrl: './assets/images/product-optical-3.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 4,
-        imgUrl: './assets/images/product_Imgs/product-optical-4.jpg',
+        imgUrl: './assets/images/product-optical-4.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 5,
-        imgUrl: './assets/images/product_Imgs/product-optical-5.jpg',
+        imgUrl: './assets/images/product-optical-5.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 6,
-        imgUrl: './assets/images/product_Imgs/product-optical-3.jpg',
+        imgUrl: './assets/images/product-optical-3.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 7,
-        imgUrl: './assets/images/product_Imgs/product-optical-6.jpg',
+        imgUrl: './assets/images/product-optical-6.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 8,
-        imgUrl: './assets/images/product_Imgs/product-optical-4.jpg',
+        imgUrl: './assets/images/product-optical-4.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 9,
-        imgUrl: './assets/images/product_Imgs/product-optical-3.jpg',
+        imgUrl: './assets/images/product-optical-3.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 10,
-        imgUrl: './assets/images/product_Imgs/product-optical-4.jpg',
+        imgUrl: './assets/images/product-optical-4.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 11,
-        imgUrl: './assets/images/product_Imgs/product-optical-2.jpg',
+        imgUrl: './assets/images/product-optical-2.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 12,
-        imgUrl: './assets/images/product_Imgs/product-optical-3.jpg',
+        imgUrl: './assets/images/product-optical-3.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
@@ -108,52 +108,52 @@ const productDatas = {
     banners: [
       {
         id: 1,
-        imgUrl: './assets/images/banners/banner-3.png',
+        imgUrl: './assets/images/banner-3.png',
       },
       {
         id: 2,
-        imgUrl: './assets/images/banners/banner-4.png',
+        imgUrl: './assets/images/banner-4.png',
       },
     ],
     products: [
       {
         id: 1,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-1.jpg',
+        imgUrl: './assets/images/product-sunglasses-1.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 2,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-2.jpg',
+        imgUrl: './assets/images/product-sunglasses-2.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 3,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-3.png',
+        imgUrl: './assets/images/product-sunglasses-3.png',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 4,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-4.png',
+        imgUrl: './assets/images/product-sunglasses-4.png',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 5,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-5.png',
+        imgUrl: './assets/images/product-sunglasses-5.png',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 6,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-6.jpg',
+        imgUrl: './assets/images/product-sunglasses-6.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
@@ -165,52 +165,52 @@ const productDatas = {
     banners: [
       {
         id: 1,
-        imgUrl: './assets/images/banners/banner-5.png',
+        imgUrl: './assets/images/banner-5.png',
       },
       {
         id: 2,
-        imgUrl: './assets/images/banners/banner-6.png',
+        imgUrl: './assets/images/banner-6.png',
       },
     ],
     products: [
       {
         id: 1,
-        imgUrl: './assets/images/product_Imgs/product-optical-6.jpg',
+        imgUrl: './assets/images/product-optical-6.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 2,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-1.jpg',
+        imgUrl: './assets/images/product-sunglasses-1.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 3,
-        imgUrl: './assets/images/product_Imgs/product-sunglasses-4.png',
+        imgUrl: './assets/images/product-sunglasses-4.png',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 4,
-        imgUrl: './assets/images/product_Imgs/product-optical-3.jpg',
+        imgUrl: './assets/images/product-optical-3.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 5,
-        imgUrl: './assets/images/product_Imgs/product-optical-2.jpg',
+        imgUrl: './assets/images/product-optical-2.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
       },
       {
         id: 6,
-        imgUrl: './assets/images/product_Imgs/product-optical-5.jpg',
+        imgUrl: './assets/images/product-optical-5.jpg',
         title: 'bj41600s',
         price: '3,490',
         colors: ['prodocut_color_brown_dark', 'prodocut_color_brown'],
@@ -240,6 +240,7 @@ function clickProductRenderEvent() {
 
       if (e.target.innerText === 'OPTICAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
+
         productCategory = productDatas.optical;
         prodocutsTitle.textContent = productCategory.title;
         
@@ -258,6 +259,14 @@ function clickProductRenderEvent() {
   });
 }
 
+// 取消所有選取效果
+function cancelChecked() {
+  productNavbarItems.forEach((item) => {
+    item.removeAttribute('style');
+  });
+}
+
+
 // 畫面初始渲染
 // 商品頁面
 function initProduct() {
@@ -265,13 +274,6 @@ function initProduct() {
     prodocutsTitle.textContent = productDatas.optical.title;
     clickProductRenderEvent();
   }
-}
-
-// 取消所有選取效果
-function cancelChecked() {
-  productNavbarItems.forEach((item) => {
-    item.removeAttribute('style');
-  });
 }
 
 // 初始化 
