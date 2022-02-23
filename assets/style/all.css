@@ -823,7 +823,8 @@ nav .nav_item {
     border-bottom-color: #aa0601;
     -webkit-transition-duration: .3s;
          -o-transition-duration: .3s;
-            transition-duration: .3s; }
+            transition-duration: .3s;
+    cursor: pointer; }
   nav .nav_item_content {
     font-size: 32px;
     font-weight: bold;

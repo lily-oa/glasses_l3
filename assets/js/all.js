@@ -183,7 +183,16 @@ var productDatas = {
       colors: ['prodocut_color_brown_dark', 'prodocut_color_brown']
     }]
   }
-}; // 商品渲染事件
+}; // 商品渲染 Fn
+
+function renderProductData(data, fn) {
+  // 產品資料渲染
+  var str = '';
+  data.forEach(function (item) {
+    str += fn(item);
+  });
+} // 商品渲染事件
+
 
 function clickProductRenderEvent() {
   var productCategory, renderStr; // productNavbarItems.removeAttribute('style');
@@ -195,17 +204,14 @@ function clickProductRenderEvent() {
       if (e.target.innerText === 'OPTICAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.optical;
-        renderStr = productOpticalsStr;
         prodocutsTitle.textContent = productCategory.title;
       } else if (e.target.innerText === 'SUNGLASSES') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.sunglasses;
-        renderStr = productSunglassesStr;
         prodocutsTitle.textContent = productCategory.title;
       } else if (e.target.innerText === 'FUNCTIONAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.functional;
-        renderStr = productFunctionalStr;
         prodocutsTitle.textContent = productCategory.title;
       }
     });
