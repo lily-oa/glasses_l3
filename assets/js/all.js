@@ -12,13 +12,13 @@ function clickProductRenderEvent() {
 
       if (e.target.innerText === 'OPTICAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
-        window.location.href = "./frame-opt.html";
+        location.href = './frame-opt.html';
       } else if (e.target.innerText === 'SUNGLASSES') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
-        window.location.href = "./frame-sun.html";
+        location.href = './frame-sun.html';
       } else if (e.target.innerText === 'FUNCTIONAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
-        window.location.href = "./frame-fun.html";
+        location.href = './frame-fun.html';
       }
     });
   });
