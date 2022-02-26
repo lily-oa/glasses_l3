@@ -39,6 +39,10 @@ nav {
         width: 20px;
         height: 20px;
       }
+      @include breakpoint(mobile375){
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 }

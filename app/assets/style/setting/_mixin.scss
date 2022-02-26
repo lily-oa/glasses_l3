@@ -31,7 +31,7 @@
   transition: width 0.5s;
 }
 
-// 斷點
+// 斷點  //另一種斷點設計在 _media.scss 裡
 //1024
 @mixin pc{
   @media(max-width:1024px){
