@@ -1,31 +1,39 @@
 // nav  系列鏡框三個選項的元件的scss
 
-nav {
+.nav {
+  border-left: 2px solid $bordColor;
     .nav_item {
     width: 34%;
-    border-left: solid 1px $bordColor;
-    border-right: solid 1px $bordColor;
+    border: 2px solid $bordColor;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+
     &_content {
       border-bottom: solid 8px transparent;
       font-size: 32px;
       font-weight: bold;
       color: black;
       padding: 20px 0 13px;
-      position: relative;
+
       &:hover {
         border-bottom-color: $secondary;
         transition-duration: .3s;
         cursor: pointer;  
       }
+
       @include breakpoint(pad992){
         font-size: 22px;
         padding: 14px 0 6px 0;
       }
+
       @include breakpoint(phone767){
         font-size: 14px;
         padding: 8px 0 1px 0;
       }
+
     }
+
     & .nav_pic {
       width: 44px;
       height: 44px;
