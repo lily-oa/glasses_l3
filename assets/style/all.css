@@ -313,6 +313,9 @@
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.border-bottom-red {
+  border-bottom: solid 8px #aa0601; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -815,23 +818,21 @@ footer {
 /* -- module -- */
 nav .nav_item {
   width: 34%;
-  border-bottom: solid 8px transparent;
-  -webkit-transition-duration: .3s;
-       -o-transition-duration: .3s;
-          transition-duration: .3s; }
-  nav .nav_item:hover {
-    border-bottom-color: #aa0601;
-    -webkit-transition-duration: .3s;
-         -o-transition-duration: .3s;
-            transition-duration: .3s;
-    cursor: pointer; }
+  border-left: solid 1px #DEE2E6;
+  border-bottom: solid 1px #DEE2E6;
+  border-right: solid 1px #DEE2E6; }
   nav .nav_item_content {
+    border-bottom: solid 8px transparent;
     font-size: 32px;
     font-weight: bold;
     color: black;
-    padding: 20px 0 13px;
-    border-left: solid 1px #DEE2E6;
-    border-right: solid 1px #DEE2E6; }
+    padding: 20px 0 13px; }
+    nav .nav_item_content:hover {
+      border-bottom-color: #aa0601;
+      -webkit-transition-duration: .3s;
+           -o-transition-duration: .3s;
+              transition-duration: .3s;
+      cursor: pointer; }
     @media only screen and (max-width: 992px) {
       nav .nav_item_content {
         font-size: 22px;
@@ -886,6 +887,9 @@ nav .nav_item {
     @media only screen and (max-width: 767px) {
       .nav_banner .nav_banner_item .nav_banner_pic {
         width: 150%; } }
+
+.border-bottom-secondary {
+  border-bottom: solid 8px #aa0601; }
 
 .siteBanner {
   background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true") no-repeat center center;
