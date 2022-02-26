@@ -109,27 +109,3 @@
     } 
   }
 }
-
-//mobile-ms(576)
-@include mobile-ms{
-  
-  nav .nav_item a {
-    padding: 20px 20px;
-  }
-}
-
-//mobile-s(403)
-@include mobile-s{
-  
-  nav .nav_item a {
-    padding: 20px 20px;
-  }
-}
-
-//mobile-ss(375)
-@include mobile-ss{
-  
-  nav .nav_item a {
-    padding: 20px 15px;
-  }
-}

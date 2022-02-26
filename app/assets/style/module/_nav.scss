@@ -19,13 +19,11 @@ nav {
       border-right: solid 1px $bordColor;
       @include breakpoint(pad992){
         font-size: 22px;
-        padding-top: 14px;
-        padding-bottom: 6px;
+        padding: 14px 0 6px 0;
       }
       @include breakpoint(phone767){
         font-size: 14px;
-        padding-top: 8px;
-        padding-bottom: 1px;
+        padding: 8px 0 1px 0;
       }
     }
     & .nav_pic {
@@ -46,6 +44,24 @@ nav {
     }
   }
 }
+
+//格子內的內距
+//mobile-ms(576)
+@include mobile-ms{
+  
+  nav .nav_item a {
+    padding: 10px 10px;
+  }
+}
+
+//mobile-s(403)
+@include mobile-s{
+  
+  nav .nav_item a {
+    padding: 10px 0;
+  }
+}
+
 // banner 圖片能自適應最主要的設定
 // .nav_banner .nav_banner_item{
 //   width: calc(100% / 2 );
