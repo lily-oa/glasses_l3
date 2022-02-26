@@ -853,6 +853,10 @@ nav .nav_item {
       nav .nav_item .nav_pic {
         width: 20px;
         height: 20px; } }
+    @media only screen and (max-width: 375px) {
+      nav .nav_item .nav_pic {
+        width: 16px;
+        height: 16px; } }
 
 .nav_banner .nav_banner_item {
   width: 50%;
