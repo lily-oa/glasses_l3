@@ -822,7 +822,8 @@ nav .nav_item {
     font-size: 32px;
     font-weight: bold;
     color: black;
-    padding: 20px 0 13px; }
+    padding: 20px 0 13px;
+    position: relative; }
     nav .nav_item_content:hover {
       border-bottom-color: #aa0601;
       -webkit-transition-duration: .3s;
