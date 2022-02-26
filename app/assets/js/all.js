@@ -2,8 +2,6 @@ const productNavbarItems = document.querySelectorAll('.js_product_navbar_item');
 
 // 商品渲染事件
 function clickProductRenderEvent() {
-  let productCategory;
-  // productNavbarItems.removeAttribute('style');
 
   productNavbarItems.forEach((item) => {
     
