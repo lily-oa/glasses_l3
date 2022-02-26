@@ -10,7 +10,7 @@ function clickProductRenderEvent() {
 
       if (e.target.innerText === 'OPTICAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
-        
+
 
       } else if (e.target.innerText === 'SUNGLASSES') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
@@ -21,8 +21,11 @@ function clickProductRenderEvent() {
         
         
       }
+      
     });
+    
   });
+  
 }
 
 // 取消所有選取效果
@@ -32,5 +35,7 @@ function cancelChecked() {
   });
 }
 
+
 //呼叫上面的這個函式
 clickProductRenderEvent();
+

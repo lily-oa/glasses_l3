@@ -3,20 +3,20 @@
 nav {
     .nav_item {
     width: 34%;
-    border-bottom: solid 8px transparent;
-    transition-duration: .3s;
-    &:hover {
-      border-bottom-color: $secondary;
-      transition-duration: .3s;
-      cursor: pointer;
-    }
+    border-left: solid 1px $bordColor;
+    border-bottom: solid 1px $bordColor;
+    border-right: solid 1px $bordColor;
     &_content {
+      border-bottom: solid 8px transparent;
       font-size: 32px;
       font-weight: bold;
       color: black;
       padding: 20px 0 13px;
-      border-left: solid 1px $bordColor;
-      border-right: solid 1px $bordColor;
+      &:hover {
+        border-bottom-color: $secondary;
+        transition-duration: .3s;
+        cursor: pointer;  
+      }
       @include breakpoint(pad992){
         font-size: 22px;
         padding: 14px 0 6px 0;
@@ -71,7 +71,7 @@ nav {
 //   }
 // }
 
-// 另一種做法但沒有比但 Tori 可以做到我不行
+// 另一種做法 Tori 寫的
 .nav_banner .nav_banner_item{
   width: 50%;
   height: 304px;
@@ -93,4 +93,9 @@ nav {
       width: 150%;
     }
   }
+}
+
+// 下底線紅色 8px
+.border-bottom-secondary{
+  border-bottom: solid 8px $secondary;
 }
