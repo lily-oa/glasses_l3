@@ -4,8 +4,6 @@ var productNavbarItems = document.querySelectorAll('.js_product_navbar_item'); /
 // 商品渲染事件
 
 function clickProductRenderEvent() {
-  var productCategory; // productNavbarItems.removeAttribute('style');
-
   productNavbarItems.forEach(function (item) {
     item.addEventListener('click', function (e) {
       cancelChecked();
