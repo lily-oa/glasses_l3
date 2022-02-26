@@ -2,23 +2,22 @@ const productNavbarItems = document.querySelectorAll('.js_product_navbar_item');
 
 // 商品渲染事件
 function clickProductRenderEvent() {
-
+  let productCategory;
   productNavbarItems.forEach((item) => {
     
     item.addEventListener('click', (e) => {
       cancelChecked();
 
       if (e.target.innerText === 'OPTICAL') {
-        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
 
-
-      } else if (e.target.innerText === 'SUNGLASSES') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         
+      } else if (e.target.innerText === 'SUNGLASSES') {
+        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
+          
 
       } else if (e.target.innerText === 'FUNCTIONAL') {
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
-        
         
       }
       
