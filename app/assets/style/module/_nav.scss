@@ -18,12 +18,12 @@ nav .nav {
 
       @include breakpoint(pad992){
         font-size: 22px;
-        padding: 14px 0 6px 0;
+        padding: 14px 0 18px 0;
       }
 
       @include breakpoint(phone767){
         font-size: 14px;
-        padding: 8px 0 6px 0;
+        padding: 8px 0 18px 0;
       }
     }
 
@@ -43,23 +43,6 @@ nav .nav {
         height: 16px;
       }
     }
-  }
-}
-
-//格子內的內距 576 及 403 的設定
-//mobile-ms(576)
-@include mobile-ms{
-  
-  nav .nav_item a {
-    padding: 18px 10px;
-  }
-}
-
-//mobile-s(403)
-@include mobile-s{
-  
-  nav .nav_item a {
-    padding: 18px 0;
   }
 }
 
