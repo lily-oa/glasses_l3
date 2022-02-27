@@ -11,6 +11,7 @@ nav .nav {
     border-bottom: none;
 
     &_content {  //a
+      border-bottom: 8px solid transparent;
       font-size: 32px;
       font-weight: bold;
       color: black;
@@ -25,6 +26,12 @@ nav .nav {
         font-size: 14px;
         padding: 18px 0 20px;
       }
+      &:hover{
+        border-bottom: 8px solid $secondary;
+      }
+    }
+    &.active{
+      border-bottom: 8px solid $secondary;
     }
 
     & .nav_pic {
@@ -46,27 +53,6 @@ nav .nav {
   }
 }
 
-//nav選項的 hover 格子裡下底紅線設定
-nav .nav .nav_item .nav_item_content {  // a
-  position: relative;
-
-  &::before{
-    content: '';
-    position: absolute;
-    border-bottom: solid 8px transparent;
-    width: 0%;
-    bottom: 0;
-    opacity: 0;
-  }
-
-  &:hover{
-    &::before{
-      width: 100%;
-      border-bottom-color: $secondary;
-      opacity: 1;
-    }
-  }
-}
 
 
 // banner 圖片能自適應最主要的設定
