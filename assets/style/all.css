@@ -826,7 +826,7 @@ nav .nav {
       font-size: 32px;
       font-weight: bold;
       color: black;
-      padding: 20px 0 13px; }
+      padding: 20px 0; }
       @media only screen and (max-width: 992px) {
         nav .nav .nav_item_content {
           font-size: 22px;
@@ -834,7 +834,7 @@ nav .nav {
       @media only screen and (max-width: 767px) {
         nav .nav .nav_item_content {
           font-size: 14px;
-          padding: 8px 0 18px 0; } }
+          padding: 18px 0 20px; } }
     nav .nav .nav_item .nav_pic {
       width: 44px;
       height: 44px; }
