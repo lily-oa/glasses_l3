@@ -834,7 +834,7 @@ nav .nav {
       @media only screen and (max-width: 767px) {
         nav .nav .nav_item_content {
           font-size: 14px;
-          padding: 8px 0 1px 0; } }
+          padding: 8px 0 6px 0; } }
     nav .nav .nav_item .nav_pic {
       width: 44px;
       height: 44px; }
@@ -853,11 +853,11 @@ nav .nav {
 
 @media (max-width: 576px) {
   nav .nav_item a {
-    padding: 10px 10px; } }
+    padding: 18px 10px; } }
 
 @media (max-width: 403px) {
   nav .nav_item a {
-    padding: 10px 0; } }
+    padding: 18px 0; } }
 
 nav .nav .nav_item .nav_item_content {
   position: relative; }
