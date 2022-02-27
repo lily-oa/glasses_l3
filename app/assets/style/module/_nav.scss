@@ -2,7 +2,7 @@
 
 nav .nav {
   border-left: 2px solid $bordColor;
-    .nav_item {
+  .nav_item {   //li 
     width: 34%;
     border: 2px solid $bordColor;
     cursor: pointer; 
@@ -10,7 +10,7 @@ nav .nav {
     border-left: none;
     border-bottom: none;
 
-    &_content {
+    &_content {  //a
       font-size: 32px;
       font-weight: bold;
       color: black;
@@ -47,7 +47,7 @@ nav .nav {
 }
 
 //nav選項的 hover 格子裡下底紅線設定
-nav .nav .nav_item .nav_item_content{
+nav .nav .nav_item .nav_item_content {  // a
   position: relative;
 
   &::before{
@@ -60,7 +60,7 @@ nav .nav .nav_item .nav_item_content{
   }
 
   &:hover{
-    &::before{
+    &::after{
       width: 100%;
       border-bottom-color: $secondary;
       opacity: 1;
@@ -70,10 +70,8 @@ nav .nav .nav_item .nav_item_content{
 
 // nav 格子內下底線紅色要被加入的 class 設定
 // 暫時沒用到
-.border-bottom-secondary{
-  width: 100%;
-  border-bottom-color: $secondary;
-  opacity: 1;
+.active{
+  border-bottom: solid 8px $secondary;
 }
 
 
