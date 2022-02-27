@@ -813,47 +813,41 @@ footer {
         margin-bottom: 8px; } }
 
 /* -- module -- */
-.nav {
+nav .nav {
   border-left: 2px solid #DEE2E6; }
-  .nav .nav_item {
+  nav .nav .nav_item {
     width: 34%;
     border: 2px solid #DEE2E6;
+    cursor: pointer;
     border-top: none;
     border-left: none;
     border-bottom: none; }
-    .nav .nav_item_content {
-      border-bottom: solid 8px transparent;
+    nav .nav .nav_item_content {
       font-size: 32px;
       font-weight: bold;
       color: black;
       padding: 20px 0 13px; }
-      .nav .nav_item_content:hover {
-        border-bottom-color: #aa0601;
-        -webkit-transition-duration: .3s;
-             -o-transition-duration: .3s;
-                transition-duration: .3s;
-        cursor: pointer; }
       @media only screen and (max-width: 992px) {
-        .nav .nav_item_content {
+        nav .nav .nav_item_content {
           font-size: 22px;
           padding: 14px 0 6px 0; } }
       @media only screen and (max-width: 767px) {
-        .nav .nav_item_content {
+        nav .nav .nav_item_content {
           font-size: 14px;
           padding: 8px 0 1px 0; } }
-    .nav .nav_item .nav_pic {
+    nav .nav .nav_item .nav_pic {
       width: 44px;
       height: 44px; }
       @media only screen and (max-width: 992px) {
-        .nav .nav_item .nav_pic {
+        nav .nav .nav_item .nav_pic {
           width: 32px;
           height: 32px; } }
       @media only screen and (max-width: 767px) {
-        .nav .nav_item .nav_pic {
+        nav .nav .nav_item .nav_pic {
           width: 20px;
           height: 20px; } }
       @media only screen and (max-width: 375px) {
-        .nav .nav_item .nav_pic {
+        nav .nav .nav_item .nav_pic {
           width: 16px;
           height: 16px; } }
 
@@ -864,6 +858,25 @@ footer {
 @media (max-width: 403px) {
   nav .nav_item a {
     padding: 10px 0; } }
+
+nav .nav .nav_item .nav_item_content {
+  position: relative; }
+  nav .nav .nav_item .nav_item_content::before {
+    content: '';
+    position: absolute;
+    border-bottom: solid 8px transparent;
+    width: 0%;
+    bottom: 0;
+    opacity: 0; }
+  nav .nav .nav_item .nav_item_content:hover::before {
+    width: 100%;
+    border-bottom-color: #aa0601;
+    opacity: 1; }
+
+.border-bottom-secondary {
+  width: 100%;
+  border-bottom-color: #aa0601;
+  opacity: 1; }
 
 .nav_banner .nav_banner_item {
   width: 50%;
@@ -887,9 +900,6 @@ footer {
     @media only screen and (max-width: 767px) {
       .nav_banner .nav_banner_item .nav_banner_pic {
         width: 150%; } }
-
-.border-bottom-secondary {
-  border-bottom: solid 8px #aa0601; }
 
 .siteBanner {
   background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true") no-repeat center center;
