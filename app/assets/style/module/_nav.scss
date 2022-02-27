@@ -83,6 +83,13 @@ nav .nav .nav_item .nav_item_content{
       opacity: 1;
     }
   }
+  &--checked{
+    &::before{
+      width: 100%;
+      border-bottom-color: $secondary;
+      opacity: 1;
+    }
+  }
 }
 
 // nav 格子內下底線紅色要被加入的 class 設定
