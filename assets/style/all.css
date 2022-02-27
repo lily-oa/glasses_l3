@@ -823,6 +823,7 @@ nav .nav {
     border-left: none;
     border-bottom: none; }
     nav .nav .nav_item_content {
+      border-bottom: 8px solid transparent;
       font-size: 32px;
       font-weight: bold;
       color: black;
@@ -835,6 +836,10 @@ nav .nav {
         nav .nav .nav_item_content {
           font-size: 14px;
           padding: 18px 0 20px; } }
+      nav .nav .nav_item_content:hover {
+        border-bottom: 8px solid #aa0601; }
+    nav .nav .nav_item.active {
+      border-bottom: 8px solid #aa0601; }
     nav .nav .nav_item .nav_pic {
       width: 44px;
       height: 44px; }
@@ -850,20 +855,6 @@ nav .nav {
         nav .nav .nav_item .nav_pic {
           width: 16px;
           height: 16px; } }
-
-nav .nav .nav_item .nav_item_content {
-  position: relative; }
-  nav .nav .nav_item .nav_item_content::before {
-    content: '';
-    position: absolute;
-    border-bottom: solid 8px transparent;
-    width: 0%;
-    bottom: 0;
-    opacity: 0; }
-  nav .nav .nav_item .nav_item_content:hover::before {
-    width: 100%;
-    border-bottom-color: #aa0601;
-    opacity: 1; }
 
 .nav_banner .nav_banner_item {
   width: 50%;
