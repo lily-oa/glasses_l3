@@ -60,20 +60,13 @@ nav .nav .nav_item .nav_item_content {  // a
   }
 
   &:hover{
-    &::after{
+    &::before{
       width: 100%;
       border-bottom-color: $secondary;
       opacity: 1;
     }
   }
 }
-
-// nav 格子內下底線紅色要被加入的 class 設定
-// 暫時沒用到
-.active{
-  border-bottom: solid 8px $secondary;
-}
-
 
 
 // banner 圖片能自適應最主要的設定
