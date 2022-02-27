@@ -872,6 +872,10 @@ nav .nav .nav_item .nav_item_content {
     width: 100%;
     border-bottom-color: #aa0601;
     opacity: 1; }
+  nav .nav .nav_item .nav_item_content--checked::before {
+    width: 100%;
+    border-bottom-color: #aa0601;
+    opacity: 1; }
 
 .border-bottom-secondary {
   width: 100%;
