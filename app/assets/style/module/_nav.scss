@@ -1,26 +1,20 @@
 // nav  系列鏡框三個選項的元件的scss
 
-.nav {
+nav .nav {
   border-left: 2px solid $bordColor;
     .nav_item {
     width: 34%;
     border: 2px solid $bordColor;
+    cursor: pointer; 
     border-top: none;
     border-left: none;
     border-bottom: none;
 
     &_content {
-      border-bottom: solid 8px transparent;
       font-size: 32px;
       font-weight: bold;
       color: black;
       padding: 20px 0 13px;
-
-      &:hover {
-        border-bottom-color: $secondary;
-        transition-duration: .3s;
-        cursor: pointer;  
-      }
 
       @include breakpoint(pad992){
         font-size: 22px;
@@ -31,7 +25,6 @@
         font-size: 14px;
         padding: 8px 0 1px 0;
       }
-
     }
 
     & .nav_pic {
@@ -53,7 +46,7 @@
   }
 }
 
-//格子內的內距
+//格子內的內距 576 及 403 的設定
 //mobile-ms(576)
 @include mobile-ms{
   
@@ -69,6 +62,37 @@
     padding: 10px 0;
   }
 }
+
+//nav選項的 hover 格子裡下底紅線設定
+nav .nav .nav_item .nav_item_content{
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    border-bottom: solid 8px transparent;
+    width: 0%;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &:hover{
+    &::before{
+      width: 100%;
+      border-bottom-color: $secondary;
+      opacity: 1;
+    }
+  }
+}
+
+// nav 格子內下底線紅色要被加入的 class 設定
+.border-bottom-secondary{
+  width: 100%;
+  border-bottom-color: $secondary;
+  opacity: 1;
+}
+
+
 
 // banner 圖片能自適應最主要的設定
 // .nav_banner .nav_banner_item{
@@ -103,7 +127,3 @@
   }
 }
 
-// 下底線紅色 8px
-.border-bottom-secondary{
-  border-bottom: solid 8px $secondary;
-}
