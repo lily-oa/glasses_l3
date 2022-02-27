@@ -1,4 +1,5 @@
-// nav  系列鏡框三個選項的元件的scss
+// nav 部分  " 系列鏡框 " 三個選項的元件的共通 scss 程式所在處 
+//各頁的 nav 相同 html 程式碼分別寫在 frame-opt.html frame-sun.html frame-fun.html
 
 nav .nav {
   border-left: 2px solid $bordColor;
@@ -30,7 +31,7 @@ nav .nav {
         border-bottom: 8px solid $secondary;
       }
     }
-    &.active{
+    .active{
       border-bottom: 8px solid $secondary;
     }
 
@@ -52,8 +53,6 @@ nav .nav {
     }
   }
 }
-
-
 
 // banner 圖片能自適應最主要的設定
 // .nav_banner .nav_banner_item{
