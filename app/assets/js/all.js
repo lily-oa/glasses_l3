@@ -4,7 +4,7 @@ $(function(){
     const delCheckedClass = 'nav_item_content--checked';
 
     $('.js_product_navbar_item').addClass(checkedClass);
-    $(this).removeClass(delCheckedClass);
+    $('.js_product_navbar_item').removeClass(delCheckedClass);
   });
 });
 
