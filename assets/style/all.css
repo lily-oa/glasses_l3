@@ -830,11 +830,11 @@ nav .nav {
       @media only screen and (max-width: 992px) {
         nav .nav .nav_item_content {
           font-size: 22px;
-          padding: 14px 0 6px 0; } }
+          padding: 14px 0 18px 0; } }
       @media only screen and (max-width: 767px) {
         nav .nav .nav_item_content {
           font-size: 14px;
-          padding: 8px 0 6px 0; } }
+          padding: 8px 0 18px 0; } }
     nav .nav .nav_item .nav_pic {
       width: 44px;
       height: 44px; }
@@ -850,14 +850,6 @@ nav .nav {
         nav .nav .nav_item .nav_pic {
           width: 16px;
           height: 16px; } }
-
-@media (max-width: 576px) {
-  nav .nav_item a {
-    padding: 18px 10px; } }
-
-@media (max-width: 403px) {
-  nav .nav_item a {
-    padding: 18px 0; } }
 
 nav .nav .nav_item .nav_item_content {
   position: relative; }
