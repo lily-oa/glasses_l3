@@ -1469,6 +1469,10 @@ input[type="checkbox"] {
   .product_content_item {
     width: calc(100% / 4 - 30px);
     margin-bottom: 104px; }
+    @media only screen and (max-width: 1040px) {
+      .product_content_item {
+        width: calc(100% / 3 - 30px);
+        margin-bottom: 104px; } }
   .product .container .product_title {
     font-size: 32px; }
   .product .container .product_content {
@@ -1481,34 +1485,34 @@ input[type="checkbox"] {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
-.product .item_price .price_word {
+.product_item_price .product_price_word {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .product .item_price .price_word .word_style {
+  .product_item_price .product_price_word .product_word_style {
     text-transform: uppercase;
     font-size: 24px; }
-  .product .item_price .price_word .style_red {
+  .product_item_price .product_price_word .style_red {
     font-weight: 900;
     color: #aa0601; }
 
-.product .item_price .price_cube {
+.product_item_price .price_cube {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
-  .product .item_price .price_cube .cube_coffee {
+  .product_item_price .price_cube .cube_coffee {
     background-color: #5F3E2D;
     width: 24px;
     height: 24px;
     border-radius: 4px;
     margin-right: 8px; }
-  .product .item_price .price_cube .cube_brown {
+  .product_item_price .price_cube .cube_brown {
     background-color: #B75929;
     width: 24px;
     height: 24px;
@@ -1519,13 +1523,13 @@ input[type="checkbox"] {
     padding: 56px 0 0 0; }
     .product .container {
       max-width: 690px; }
+      .product .container .product_content_item {
+        width: calc(100% / 2 - 30px);
+        margin-bottom: 72px; }
       .product .container .h3-black {
         font-size: 32px; }
       .product .container .product_title {
-        font-size: 24px; }
-      .product .container .content_item {
-        width: calc(100% / 2 - 30px);
-        margin-bottom: 72px; } }
+        font-size: 24px; } }
 
 @media (max-width: 767px) {
   .product {
@@ -1543,7 +1547,7 @@ input[type="checkbox"] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .product .product_content .content_item {
+    .product .product_content .product_content_item {
       width: 100%;
       margin-bottom: 32px; }
     .product .product_content img {
