@@ -2,7 +2,7 @@
 
 .product {
   padding: 80px 0 96px 0;
-  & .content_item {
+  &_content_item {
     width: calc(100% / 4 - 30px);
     margin-bottom: 104px;
   }
