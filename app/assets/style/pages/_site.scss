@@ -233,3 +233,37 @@
     }
   } 
 }
+
+// 圖片 hover 放大及出現搜尋 icon 的設定 ** 很重要
+.site_list_img{
+  position: relative;
+  background: $bordColor;
+  overflow: hidden;
+  img{
+    transition-duration: .3s;
+    opacity: 1;
+  }
+  .search_icon{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  &:hover{
+    img{
+      transform: scale(1.1);
+      transition-duration: .25s;
+      opacity: .7;
+    }
+    .search_icon{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: .9;
+    }
+  }
+}
