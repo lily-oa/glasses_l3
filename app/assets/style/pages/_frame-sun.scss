@@ -104,16 +104,4 @@
       }
     }
   }
-  .productSun .productSun_item_price .productSun_price_word .productSun_word_style{
-    font-size: $font-size-1;
-  }
-  .productSun .productSun_item_price .price_cube{
-    .cube_coffee, .cube_brown{
-      width: 15px;
-      height: 15px;
-      &:not(:last-child){
-        margin-right: 4px;
-      }
-    } 
-  }
 }  
