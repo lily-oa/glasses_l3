@@ -1,149 +1,81 @@
-// pagination  frame-opt
-.pagination {
-  padding-bottom: 160px;
-  a {
-    border: 1px solid $bordColor-frame-1;
-    padding: 10px 15px;
-    color: $bordColor-frame-1;
-    font-size: 19px;
+//區塊的下邊距(各版型)
+.pagination{
+  margin-bottom: 160px;
+  @include breakpoint(pad992){
+    margin-bottom: 96px;
   }
-  .active {
-    background-color: $bordColor-frame-1;
-    color: #fff;
+  @include breakpoint(phone767){
+    margin-bottom: 30px;
   }
-  .next {
-    background-color: $bordColor-frame-2;
+}
+// 區塊的置中及大小(二種版型)
+.pagination_form{
+  width: 50%;
+  margin: 0 auto;
+
+  @include breakpoint(phone767){
+    width: 100%;
   }
 }
 
-// pagination hover
-.pagination .pagination_hover:hover {
-  background: $bordColor-frame-1;
-  a:hover {
+.pagination_label{
+  border: 1px solid $bordColor-frame-1;
+  display: block;
+  &:hover{
     color: #fff;
-  }
-  .active:hover {
-    background: $secondary;
-    border: 1px solid $secondary;
-  }
-  .next:hover {
     background: $bordColor-frame-1;
+    cursor: pointer;
+  }
+}
+
+// li 容器
+.pagination_item {
+  @include breakpoint(pad992){
+    flex: 2 0 auto;
+    text-align: center;
+  }
+}
+
+// 連結
+.pagination_link{
+  display: none;
+  &:checked + .pagination_label{
     color: #fff;
-  }
-}
-
-@include pad{
-  .pagination{
-    margin-top: -7px;
-    padding-bottom: 96px;
-  }
-}
-
-@include mobile{
-  .pagination a {
-    font-size: $font-special-2;
-  }
-}
-
-// mobile-s(403)
-@include mobile-s{
-  .pagination{
-    .pre, .next{
-      font-size: $font-special-4;
-      padding-bottom: 11px;
-    }
-  }
-}
-
-// mobile-ss(375)
-@include mobile-ss{
-  .pagination{
-    .pre, .next{
-      font-size: $font-special-5;
-      padding-bottom: 13.5px;
-      padding-top: 13.5px;
-    }
-  }
-}
-
-/*---------------------------------------------------*/
-
-// pagination  frame-sun
-// pagination
-.paginationSun {
-  padding-bottom: 160px;
-  a {
-    border: 1px solid $bordColor-frame-1;
-    padding: 10px 15px;
-    color: $bordColor-frame-1;
-    font-size: 19px;
-  }
-  .active {
-    background-color: $bordColor-frame-1;
-    color: #fff;
-  }
-  .next {
-    background-color: $bordColor-frame-2;
-  }
-}
-
-// pagination hover
-.paginationSun .paginationSun_hover:hover {
-  background: $bordColor-frame-1;
-  a:hover {
-    color: #fff;
-  }
-  .active:hover {
-    background: $secondary;
-    border: 1px solid $secondary;
-  }
-  .next:hover {
     background: $bordColor-frame-1;
-    color: #fff;
   }
 }
 
-  .paginationSun {
-    display: none;
-}
+// 連結數字 1.2.3.4.5
+.pagination_link_num{
+  font-size: $font-special-3;  //18
+  line-height: 1.5;
+  padding: 9.5px 16px;
 
-//pad
-@include pad {
-  .paginationSun {
-    display: none;
+  @include breakpoint(pad992){
+    padding-left: 0;
+    padding-right: 0;
   }
-}
 
-// mobile
-@include mobile {
-  .paginationSun{
-    display: block;
-    a {
-      font-size: $font-special-2;
-    }
-  }
-  .paginationSun{
-    margin-bottom: -104px;
+  @include breakpoint(phone767){
+    font-size: $font-size-1;  //16
   }
 }
 
-// mobile-s(403)
-@include mobile-s{
-  .paginationSun{
-    .pre, .next{
-      font-size: $font-special-4;
-      padding-bottom: 11px;
-    }
+// 連結文字 上一頁 、下一頁
+.pagination_link_text{
+  font-size: $font-special-1;  //19
+  line-height: 1.53;
+  padding: 8.5px 12px;
+
+  @include breakpoint(pad992){
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include breakpoint(phone767){
+    font-size: $font-special-2;  //17
   }
 }
 
-// mobile-ss(375)
-@include mobile-ss{
-  .paginationSun{
-    .pre, .next{
-      font-size: $font-special-5;
-      padding-bottom: 13.5px;
-      padding-top: 13.5px;
-    }
-  }
+.pagination_item:last-child{
+  background: $bordColor;
 }
