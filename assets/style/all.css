@@ -1789,6 +1789,41 @@ input[type="checkbox"] {
       width: 100%;
       margin-bottom: 16px; } }
 
+.site_list_img {
+  position: relative;
+  background: #DEE2E6;
+  overflow: hidden; }
+  .site_list_img img {
+    -webkit-transition-duration: .3s;
+         -o-transition-duration: .3s;
+            transition-duration: .3s;
+    opacity: 1; }
+  .site_list_img .search_icon {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0; }
+  .site_list_img:hover img {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: .25s;
+         -o-transition-duration: .25s;
+            transition-duration: .25s;
+    opacity: .7; }
+  .site_list_img:hover .search_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+        -ms-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+    opacity: .9; }
+
 .site {
   padding: 50px 0 13px 0; }
   @media (max-width: 992px) {
