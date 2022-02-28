@@ -1,1 +1,1 @@
-{"version":3,"sources":["all.js"],"names":[],"mappings":"AAAA","file":"all.js","sourcesContent":[""]}
+{"version":3,"sources":["all.js"],"names":["$","on","location","href"],"mappings":";;AAAAA,CAAC,CAAC,YAAU;AACVA,EAAAA,CAAC,CAAC,eAAD,CAAD,CAAmBC,EAAnB,CAAsB,OAAtB,EAA+B,YAAU;AACvCC,IAAAA,QAAQ,CAACC,IAAT,GAAgB,kBAAhB;AACD,GAFD;AAID,CALA,CAAD","file":"all.js","sourcesContent":["$(function(){\n  $('.js_sun_click').on('click', function(){\n    location.href = './frame-sun.html';\n  });\n  \n});\n\n"]}
