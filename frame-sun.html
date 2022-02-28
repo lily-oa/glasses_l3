@@ -225,18 +225,162 @@
   </div>
 </div>
 
-<!-- paginationSun -->
-<div class="paginationSun container">
-  <ul class="paginationSun_content d-flex d-jcc">
-    <li class="paginationSun_hover"><a href="#" class="pre">上一頁</a></li>
-    <li class="paginationSun_hover"><a href="./frame-opt.html">1</a></li>
-    <li class="paginationSun_hover"><a href="./frame-sun.html" class="active">2</a></li>
-    <li class="paginationSun_hover"><a href="#">3</a></li>
-    <li class="paginationSun_hover"><a href="#">4</a></li>
-    <li class="paginationSun_hover"><a href="#">5</a></li>
-    <li class="paginationSun_hover"><a href="#" class="next">下一頁</a></li>
+
+<!-- pagination 分頁-->
+<form class="pagination">
+  <ul 
+    class="
+            pagination_form
+            d-flex
+            d-jcc
+          "
+  >
+    <!--上一頁-->
+    <li 
+      class="
+              pagination_item
+            "
+    >
+      <input 
+            type="radio"
+            name="pagination"
+            id="pagination_previous"
+            class="pagination_link"
+      >
+      <label 
+            for="pagination_previous"
+            name="上一頁"
+            class="pagination_label pagination_link_text"
+      >
+        上一頁
+      </label>
+    </li>
+    <!--1-->
+    <li 
+      class="
+              pagination_item
+              js_opt_click
+            "
+    >
+      <input 
+            type="radio"
+            name="pagination"
+            id="pagination_num_1"
+            class="pagination_link"
+      >
+      <label 
+            for="pagination_num_1"
+            name="頁數 1"
+            class="pagination_label pagination_link_num"
+      >
+        1
+      </label>
+    </li>
+    <!--2-->
+    <li 
+      class="
+              pagination_item
+              js_sun_click
+            "
+    >
+      <input 
+            type="radio"
+            name="pagination"
+            id="pagination_num_2"
+            class="pagination_link"
+            checked
+      >
+      <label 
+            for="pagination_num_2"
+            name="頁數 2"
+            class="pagination_label pagination_link_num"
+      >
+        2
+      </label>
+    </li>
+    <!--3-->
+    <li 
+      class="
+              pagination_item
+              js_fun_click
+            "
+    >
+      <input 
+            type="radio"
+            name="pagination"
+            id="pagination_num_3"
+            class="pagination_link"
+      >
+      <label 
+            for="pagination_num_3"
+            name="頁數 3"
+            class="pagination_label pagination_link_num"
+      >
+        3
+      </label>
+    </li>
+    <!--4-->
+    <li 
+      class="
+              pagination_item
+            "
+    >
+      <input 
+            type="radio"
+            name="pagination"
+            id="pagination_num_4"
+            class="pagination_link"
+      >
+      <label 
+            for="pagination_num_4"
+            name="頁數 4"
+            class="pagination_label pagination_link_num"
+      >
+        4
+      </label>
+    </li>
+    <!--5-->
+    <li 
+      class="
+              pagination_item
+            "
+    >
+      <input 
+            type="radio"
+            name="pagination"
+            id="pagination_num_5"
+            class="pagination_link"
+      >
+      <label 
+            for="pagination_num_5"
+            name="頁數 5"
+            class="pagination_label pagination_link_num"
+      >
+        5
+      </label>
+    </li>
+    <!--下一頁-->
+    <li 
+      class="
+              pagination_item
+            "
+    >
+      <input 
+            type="radio"
+            name="pagination"
+            id="pagination_num_next"
+            class="pagination_link"
+      >
+      <label 
+            for="pagination_num_next"
+            name="下一頁"
+            class="pagination_label pagination_link_text"
+      >
+        下一頁
+      </label>
+    </li>
   </ul>
-</div>
+</form>
   <!-- footer-->
   <footer>
     <div class="container">
